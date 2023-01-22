@@ -8,11 +8,23 @@ groups = (
 
 
 class Markers(models.Model):
-    latitude = models.CharField('Широта', max_length=50)
-    longitude = models.CharField('Долгота', max_length=50)
-    header = models.CharField('Заголовок', max_length=50)
+    latitude = models.CharField(
+        'Широта',
+        max_length=50)
+    longitude = models.CharField(
+        'Долгота',
+        max_length=50
+    )
+    header = models.CharField(
+        'Заголовок',
+        max_length=50
+    )
     description = models.TextField('Описание')
-    group = models.CharField(max_length=20, choices=groups, default='attractions')
+    group = models.CharField(
+        max_length=20,
+        choices=groups,
+        default='attractions'
+    )
 
     def __str__(self):
         return self.header
