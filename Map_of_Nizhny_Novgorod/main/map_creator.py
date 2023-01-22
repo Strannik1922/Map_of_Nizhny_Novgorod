@@ -13,8 +13,14 @@ def map_create(path):
     </div>
     '''))
 
-    group_attractions = folium.FeatureGroup(name='Достопримечательности', show=True)
-    group_parks_and_museums = folium.FeatureGroup(name='Парки и музеи', show=True)
+    group_attractions = folium.FeatureGroup(
+        name='Достопримечательности',
+        show=True
+    )
+    group_parks_and_museums = folium.FeatureGroup(
+        name='Парки и музеи',
+        show=True
+    )
 
     markers = Markers.objects.all()
 
