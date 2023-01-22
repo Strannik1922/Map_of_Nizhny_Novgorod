@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bcdf90ba5c8abcdf378f5c0639d3dcaf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 97vh;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div>
+        <a href="/">На главную</a>
+    </div>
+    
+    
+            <div class="folium-map" id="map_bcdf90ba5c8abcdf378f5c0639d3dcaf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bcdf90ba5c8abcdf378f5c0639d3dcaf = L.map(
+                "map_bcdf90ba5c8abcdf378f5c0639d3dcaf",
+                {
+                    center: [56.326722, 44.006479],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_831c679a6274762692b31f6cf936d7b0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bcdf90ba5c8abcdf378f5c0639d3dcaf);
+        
+    
+            var feature_group_ec57af355b9d5d377af2d6e274a5cf42 = L.featureGroup(
+                {}
+            ).addTo(map_bcdf90ba5c8abcdf378f5c0639d3dcaf);
+        
+    
+            var marker_0f512ccd00d8b8d8861e3c2836d0a704 = L.marker(
+                [56.328624, 44.002842],
+                {}
+            ).addTo(feature_group_ec57af355b9d5d377af2d6e274a5cf42);
+        
+    
+            var icon_01908106cbbae840e7de6287f5d37e8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f512ccd00d8b8d8861e3c2836d0a704.setIcon(icon_01908106cbbae840e7de6287f5d37e8d);
+        
+    
+        var popup_ba3716630d142b4bcc2c6e75e4d6aae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45ddcf779bd646873782bcd3cb83b186 = $(`<div id="html_45ddcf779bd646873782bcd3cb83b186" style="width: 100.0%; height: 100.0%;">Крепость в историческом центре Нижнего Новгорода и его древнейшая часть.</div>`)[0];
+                popup_ba3716630d142b4bcc2c6e75e4d6aae5.setContent(html_45ddcf779bd646873782bcd3cb83b186);
+            
+        
+
+        marker_0f512ccd00d8b8d8861e3c2836d0a704.bindPopup(popup_ba3716630d142b4bcc2c6e75e4d6aae5)
+        ;
+
+        
+    
+    
+            marker_0f512ccd00d8b8d8861e3c2836d0a704.bindTooltip(
+                `<div>
+                     Нижегородский кремль
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed800601acb7905a23e37e7b96af4b67 = L.marker(
+                [56.3283203, 43.9612056],
+                {}
+            ).addTo(feature_group_ec57af355b9d5d377af2d6e274a5cf42);
+        
+    
+            var icon_12bf3c1e29599c5a0df336adec0c3f04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed800601acb7905a23e37e7b96af4b67.setIcon(icon_12bf3c1e29599c5a0df336adec0c3f04);
+        
+    
+        var popup_f82d2a15d50a43644b54db2cfdb645fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fa085285af6a3d9d60a94163cf01df3 = $(`<div id="html_8fa085285af6a3d9d60a94163cf01df3" style="width: 100.0%; height: 100.0%;">Исторический район, где располагалась крупнейшая ярмарка Российской империи.</div>`)[0];
+                popup_f82d2a15d50a43644b54db2cfdb645fe.setContent(html_8fa085285af6a3d9d60a94163cf01df3);
+            
+        
+
+        marker_ed800601acb7905a23e37e7b96af4b67.bindPopup(popup_f82d2a15d50a43644b54db2cfdb645fe)
+        ;
+
+        
+    
+    
+            marker_ed800601acb7905a23e37e7b96af4b67.bindTooltip(
+                `<div>
+                     Нижегородская ярмарка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a6ddeaa7ff65786228dd6cebffcc9ba = L.marker(
+                [56.330875, 44.009462],
+                {}
+            ).addTo(feature_group_ec57af355b9d5d377af2d6e274a5cf42);
+        
+    
+            var icon_98f5cf9b0ccc9239965efc13a99ae893 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a6ddeaa7ff65786228dd6cebffcc9ba.setIcon(icon_98f5cf9b0ccc9239965efc13a99ae893);
+        
+    
+        var popup_a03f7888ae2e099350bb38f15ed0552b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d05b235898473666d18f468142e8a59d = $(`<div id="html_d05b235898473666d18f468142e8a59d" style="width: 100.0%; height: 100.0%;">Монументальная лестница в историческом центре Нижнего Новгорода, соединяющая Верхне-Волжскую и Нижне-Волжскую набережные.</div>`)[0];
+                popup_a03f7888ae2e099350bb38f15ed0552b.setContent(html_d05b235898473666d18f468142e8a59d);
+            
+        
+
+        marker_7a6ddeaa7ff65786228dd6cebffcc9ba.bindPopup(popup_a03f7888ae2e099350bb38f15ed0552b)
+        ;
+
+        
+    
+    
+            marker_7a6ddeaa7ff65786228dd6cebffcc9ba.bindTooltip(
+                `<div>
+                     Чкаловская лестница
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_feac8b05be2b180d3f6f8d74133f54ba = L.marker(
+                [56.32722, 43.985],
+                {}
+            ).addTo(feature_group_ec57af355b9d5d377af2d6e274a5cf42);
+        
+    
+            var icon_bba4ac422d7a52ec47466b94d02c6b93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_feac8b05be2b180d3f6f8d74133f54ba.setIcon(icon_bba4ac422d7a52ec47466b94d02c6b93);
+        
+    
+        var popup_0382e85f2e40e0ca3da2a491aa939932 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f57f6a0808c2e19e79fc4eefc8adeab = $(`<div id="html_5f57f6a0808c2e19e79fc4eefc8adeab" style="width: 100.0%; height: 100.0%;">Церковь является одним из лучших образцов строгановского стиля, имеет статус памятника архитектуры федерального значения.</div>`)[0];
+                popup_0382e85f2e40e0ca3da2a491aa939932.setContent(html_5f57f6a0808c2e19e79fc4eefc8adeab);
+            
+        
+
+        marker_feac8b05be2b180d3f6f8d74133f54ba.bindPopup(popup_0382e85f2e40e0ca3da2a491aa939932)
+        ;
+
+        
+    
+    
+            marker_feac8b05be2b180d3f6f8d74133f54ba.bindTooltip(
+                `<div>
+                     Рождественская церковь
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_db09812103f8f32b37efc77d0e5ea226 = L.featureGroup(
+                {}
+            ).addTo(map_bcdf90ba5c8abcdf378f5c0639d3dcaf);
+        
+    
+            var marker_01707ce685104e15bb6b57ac7502ce5c = L.marker(
+                [56.254603878988, 43.893277645111],
+                {}
+            ).addTo(feature_group_db09812103f8f32b37efc77d0e5ea226);
+        
+    
+            var icon_209d0bd06c7058b7088c1b816686ee57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01707ce685104e15bb6b57ac7502ce5c.setIcon(icon_209d0bd06c7058b7088c1b816686ee57);
+        
+    
+        var popup_0ae609603f075260545622466dfb26f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13f36d88e222cc776833787116ba9d41 = $(`<div id="html_13f36d88e222cc776833787116ba9d41" style="width: 100.0%; height: 100.0%;">Инициаторы его создания - ветераны и администрация ГАЗа. Музей расположен на двух этажах Учебного центра ОАО ГАЗ, в нём свыше 40000 экспонатов.</div>`)[0];
+                popup_0ae609603f075260545622466dfb26f1.setContent(html_13f36d88e222cc776833787116ba9d41);
+            
+        
+
+        marker_01707ce685104e15bb6b57ac7502ce5c.bindPopup(popup_0ae609603f075260545622466dfb26f1)
+        ;
+
+        
+    
+    
+            marker_01707ce685104e15bb6b57ac7502ce5c.bindTooltip(
+                `<div>
+                     Музей истории ОАО "ГАЗ"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd46e551123e67f624e311041b160f1d = L.marker(
+                [56.3375, 43.86111],
+                {}
+            ).addTo(feature_group_db09812103f8f32b37efc77d0e5ea226);
+        
+    
+            var icon_f155a7592ab3abcf9995479b75b201c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd46e551123e67f624e311041b160f1d.setIcon(icon_f155a7592ab3abcf9995479b75b201c8);
+        
+    
+        var popup_c2491e1d8599f200c312c18096d39328 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3542522bb38fc036f27dd7702c27aaa = $(`<div id="html_d3542522bb38fc036f27dd7702c27aaa" style="width: 100.0%; height: 100.0%;">Парк является одним из самых популярных мест отдыха жителей Нижнего Новгорода.</div>`)[0];
+                popup_c2491e1d8599f200c312c18096d39328.setContent(html_d3542522bb38fc036f27dd7702c27aaa);
+            
+        
+
+        marker_fd46e551123e67f624e311041b160f1d.bindPopup(popup_c2491e1d8599f200c312c18096d39328)
+        ;
+
+        
+    
+    
+            marker_fd46e551123e67f624e311041b160f1d.bindTooltip(
+                `<div>
+                     Сормовский парк
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfba8e541a6e9d7aff1bd15cc83b27c3 = L.marker(
+                [56.308685, 43.997183],
+                {}
+            ).addTo(feature_group_db09812103f8f32b37efc77d0e5ea226);
+        
+    
+            var icon_31ae8d5fb26e0c385c81408ef4d75bf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bfba8e541a6e9d7aff1bd15cc83b27c3.setIcon(icon_31ae8d5fb26e0c385c81408ef4d75bf8);
+        
+    
+        var popup_1dbf32b1716493fd66d38033fa47f841 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c53dfc1a569ac8ad753e425fc28ec62d = $(`<div id="html_c53dfc1a569ac8ad753e425fc28ec62d" style="width: 100.0%; height: 100.0%;">Парк имени А.С. Пушкина - единственный ландшафтный парк в Нижнем Новгороде.</div>`)[0];
+                popup_1dbf32b1716493fd66d38033fa47f841.setContent(html_c53dfc1a569ac8ad753e425fc28ec62d);
+            
+        
+
+        marker_bfba8e541a6e9d7aff1bd15cc83b27c3.bindPopup(popup_1dbf32b1716493fd66d38033fa47f841)
+        ;
+
+        
+    
+    
+            marker_bfba8e541a6e9d7aff1bd15cc83b27c3.bindTooltip(
+                `<div>
+                     Парк имени А.С. Пушкина
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11e2fe01e378156f6e7b1405cab2c29e = L.marker(
+                [56.27417, 44.010583],
+                {}
+            ).addTo(feature_group_db09812103f8f32b37efc77d0e5ea226);
+        
+    
+            var icon_3e2dfe79c54538eb9840c8d471578207 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11e2fe01e378156f6e7b1405cab2c29e.setIcon(icon_3e2dfe79c54538eb9840c8d471578207);
+        
+    
+        var popup_091b8268dced908b0a582dcf2249975c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75293f533f8daf8b1f28a2cadfdbdc05 = $(`<div id="html_75293f533f8daf8b1f28a2cadfdbdc05" style="width: 100.0%; height: 100.0%;">Щёлоковский хутор включает в себя памятники деревянного зодчества - уникальные образцы русской архитектурно-строительной культуры конца XVII - начала ХХ вв.</div>`)[0];
+                popup_091b8268dced908b0a582dcf2249975c.setContent(html_75293f533f8daf8b1f28a2cadfdbdc05);
+            
+        
+
+        marker_11e2fe01e378156f6e7b1405cab2c29e.bindPopup(popup_091b8268dced908b0a582dcf2249975c)
+        ;
+
+        
+    
+    
+            marker_11e2fe01e378156f6e7b1405cab2c29e.bindTooltip(
+                `<div>
+                     Щёлоковский хутор
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_a9501914c47c27f60bc9f7d159561d8e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_831c679a6274762692b31f6cf936d7b0,
+                },
+                overlays :  {
+                    "\u0414\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438" : feature_group_ec57af355b9d5d377af2d6e274a5cf42,
+                    "\u041f\u0430\u0440\u043a\u0438 \u0438 \u043c\u0443\u0437\u0435\u0438" : feature_group_db09812103f8f32b37efc77d0e5ea226,
+                },
+            };
+            L.control.layers(
+                layer_control_a9501914c47c27f60bc9f7d159561d8e.base_layers,
+                layer_control_a9501914c47c27f60bc9f7d159561d8e.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_bcdf90ba5c8abcdf378f5c0639d3dcaf);
+        
+</script>
+</html>

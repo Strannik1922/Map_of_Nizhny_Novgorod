@@ -1,0 +1,17 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Карта Нижнего Новгорода</title>
+</head>
+<body>
+<h1>Карта Нижнего Новгорода с интересными местами</h1>
+<a href="{% url 'map_view' %}">Открыть карту</a><br>
+<a href="/admin">Админ панель</a>
+</body>
+</html>
