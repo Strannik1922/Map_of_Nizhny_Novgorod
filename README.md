@@ -14,23 +14,28 @@ Map_of_Nizhny_Novgorod - веб-приложение, при открытии к
 git clone git@github.com:Strannik1922/Map_of_Nizhny_Novgorod.git
 ```
 
-#### 2. Создайте и активируйте виртуальную среду:
+#### 2. Перейдите в директорию проекта:
+```bash
+cd Map_of_Nizhny_Novgorod/
+```
+
+#### 3. Создайте и активируйте виртуальную среду:
 ```bash
 python -m python venv
 source python/Scripts/activate
 ```
 
-#### 3. Обновить pip:
+#### 4. Обновить pip:
 ```bash
 python -m pip install --upgrade pip
 ```
 
-#### 4. Импорт requirements.txt
+#### 5. Импорт requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 5. Не забудьте провести миграции:
+#### 6. Не забудьте провести миграции:
 ```bash
 python manage.py migrate
 ```
